@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: weather_app_development
+
+test:
+  <<: *default
+  database: weather_app_test
+
+production:
+  <<: *default
+  database: 
+  username: 
+  password: <%= ENV['TO_DO_APP_DATABASE_PASSWORD'] %>
