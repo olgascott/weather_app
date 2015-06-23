@@ -1,0 +1,12 @@
+<section class="result">
+  <% if @result %>
+    <span class="icon"><%= image_tag "http://openweathermap.org/img/w/#{@result[:icon_code]}.png" %></span>
+    <span class="temperature"><%= @result[:temperature] %>&deg;F</span>
+    <h1><%= @result[:city] %></h1>
+    <h2><%= @result[:country] %></h2>
+    <p>Sunrise: <%= @result[:sunrise] %></p>
+    <p>Sunset: <%= @result[:sunset] %></p>
+  <% else %>
+    <h1>Sorry, but there was no result for your request</h1>
+  <% end %>
+</section>

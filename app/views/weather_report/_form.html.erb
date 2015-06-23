@@ -1,0 +1,7 @@
+<section class="form">
+  <%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:city, "City") %>
+    <%= text_field_tag(:city) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+</section>

@@ -1,0 +1,49 @@
+$dark_gray: #636c74;
+$light_gray: #6b737c;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+#container {
+  width: 400px;
+  margin: 0 auto;
+  // Result
+  section.result {
+    border: 1px solid #bababa;
+    margin: 10px 0;
+    position: relative;
+    padding: 10px;
+    span.icon {
+      position: absolute;
+      top: 25px;
+      right: 0px;
+    }
+    span.temperature {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 16px;
+      color: $dark_gray;
+    }
+    h1 {
+      font-size: 25px;
+      color: $dark_gray;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: normal;
+      padding-bottom: 10px;
+      color: $light_gray;
+    }
+  }
+  // Form
+  section.form {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
